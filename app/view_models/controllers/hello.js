@@ -6,5 +6,6 @@ const ApplicationViewModel = require('./../application_view_model');
 module.exports = class Hello extends ApplicationViewModel {
   static definer() {
     name('hello');
+    accessor('greetings');
   }
 }

@@ -1,2 +1,6 @@
 // Application stylesheets.
 @import "app/assets/styles/controllers/hello.scss";
+
+body, html {
+  background: #efefef;
+}

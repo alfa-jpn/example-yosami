@@ -8,9 +8,11 @@ const m = require('mithril');
  * @return {object} Rendering result.
  */
 module.exports = function(controller, pipe, _yield) {
+  pipe.title = 'YOSAMI PAGE';
   return (
-<div class='controllers/hello'>
-  Show `app/views/controllers/hello`
+<div class='controllers/hello' onclick={controller.greet.bind(controller)}>
+  Hello! yosami
+  <p>{ (this.greetings || 0) }greetings</p>
 </div>
   );
 };
